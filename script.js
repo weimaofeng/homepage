@@ -46,7 +46,7 @@ const siteData = {
       id: "yue-zheng",
       name: "Yue Zheng",
       role: "PhD Researcher",
-      affiliation: "University of Southampton",
+      affiliation: "EIRA Lab",
       bio: "Research focuses on multimodal information retrieval and inclusive information access, combining text, image, and sensor data to build retrieval systems that adapt to the needs of neurodivergent users.",
       initials: "YZ",
       photo: "assets/yue-zheng.jpg",
