@@ -87,7 +87,7 @@ const siteData = {
       memberId: "haiming-liu",
       name: "Dr Haiming Liu",
       overline: "Supervisor",
-      description: "For Haiming Liu, the site currently links directly to the full public publications page. This keeps the member-centered layout in place while avoiding duplication.",
+      description: "There are many publications by Haiming Liu, so please refer directly to the full publications link below.",
       links: [
         {
           label: "View Full Publications",
