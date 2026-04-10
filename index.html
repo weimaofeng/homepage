@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="EIRA Lab studies information retrieval, user information need, and human-centered multimodal access."
+  >
+  <title>EIRA Lab | Empathetic and Embodied Information Retrieval and Access Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&family=Space+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="EIRA Lab home">
+        <span class="brand-mark">eira</span>
+        <span class="brand-text">EIRA Lab</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#members">Members</a>
+        <a class="nav-link" href="#publications">Publications</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Empathetic and Embodied Information Retrieval and Access Lab</p>
+          <h1>Human-centered retrieval for how people really seek, interpret, and act on information.</h1>
+          <p class="lead">
+            EIRA Lab explores information retrieval and user information need through interactive,
+            multimodal, VR, and AR approaches that keep human goals, context, and experience at the
+            center of system design.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button" href="#members">Meet the Lab</a>
+            <a class="button button--ghost" href="#publications">Publications</a>
+          </div>
+
+          <ul class="hero-tags" aria-label="Research themes">
+            <li>Information Retrieval</li>
+            <li>User Information Need</li>
+            <li>Interactive Search</li>
+            <li>Multimodal Access</li>
+          </ul>
+        </div>
+
+        <aside class="hero-panel reveal">
+          <img
+            class="hero-logo"
+            src="assets/lab-logo.jpg"
+            alt="EIRA Lab logo"
+          >
+
+          <div class="hero-panel-grid">
+            <article class="panel-card">
+              <p class="panel-label">Research Core</p>
+              <p>IR systems that respond to evolving needs, uncertainty, and exploration.</p>
+            </article>
+            <article class="panel-card">
+              <p class="panel-label">Human Lens</p>
+              <p>User behaviour, interaction signals, and theory-informed design.</p>
+            </article>
+            <article class="panel-card">
+              <p class="panel-label">Access Modes</p>
+              <p>Text, image, speech, multimodal interfaces, VR, and AR.</p>
+            </article>
+            <article class="panel-card">
+              <p class="panel-label">Impact</p>
+              <p>Inclusive, adaptive, and meaningful information access for diverse users.</p>
+            </article>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section" id="about">
+        <div class="section-header reveal">
+          <div>
+            <p class="section-kicker">About</p>
+            <h2 class="section-title">A lab built around people, search, and sense-making.</h2>
+          </div>
+          <p class="section-intro">
+            We study how information access can better align with real human needs rather than only
+            literal queries.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-card about-card--primary reveal">
+            <h3>About EIRA Lab</h3>
+            <p>
+              At EIRA Lab, we investigate how people search when their goals are evolving,
+              uncertain, multimodal, emotional, and shaped by context. Our work connects
+              information retrieval with user information need, interaction design, and immersive
+              access so that retrieval systems can respond not only to keywords, but also to intent,
+              behaviour, and the lived experience of information seeking.
+            </p>
+            <p>
+              We build human-centered retrieval models and interfaces that support exploration,
+              understanding, and decision-making across text, image, speech, and multimodal
+              environments. By combining behavioural evidence, interaction signals, and
+              theory-driven design, we aim to create retrieval systems that are more inclusive,
+              adaptive, and meaningful for diverse users and real-world tasks.
+            </p>
+          </article>
+
+          <article class="about-card reveal">
+            <h3>What We Care About</h3>
+            <div class="detail-list">
+              <div class="detail-item">
+                <span>User Information Need</span>
+                <p>Understanding how needs emerge, change, and become actionable during search.</p>
+              </div>
+              <div class="detail-item">
+                <span>Interactive Retrieval</span>
+                <p>Designing systems that support dialogue, exploration, feedback, and refinement.</p>
+              </div>
+              <div class="detail-item">
+                <span>Multimodal Access</span>
+                <p>Expanding search beyond text through image, speech, sketch, VR, and AR interaction.</p>
+              </div>
+              <div class="detail-item">
+                <span>Inclusive Experience</span>
+                <p>Building access methods that are usable, interpretable, and responsive to different people and settings.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="members">
+        <div class="section-header reveal">
+          <div>
+            <p class="section-kicker">Members</p>
+            <h2 class="section-title">The people behind the lab.</h2>
+          </div>
+          <p class="section-intro">
+            Each member card can link directly to that person's publication area below, so the site
+            stays organized around people as the group grows.
+          </p>
+        </div>
+
+        <div class="card-grid card-grid--members" id="members-grid"></div>
+      </section>
+
+      <section class="section" id="publications">
+        <div class="section-header reveal">
+          <div>
+            <p class="section-kicker">Publications</p>
+            <h2 class="section-title">Publications organized by member.</h2>
+          </div>
+          <p class="section-intro">
+            Clicking the publications button on a member card will bring visitors directly to the
+            relevant section below.
+          </p>
+        </div>
+
+        <div class="publication-sections" id="publications-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>EIRA Lab</p>
+      <p>Empathetic and Embodied Information Retrieval and Access Lab</p>
+      <p>Built as a GitHub Pages-ready academic site.</p>
+      <p>&copy; <span id="year"></span> EIRA Lab</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
