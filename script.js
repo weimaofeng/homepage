@@ -105,7 +105,7 @@ const siteData = {
       entries: [
         {
           title: "Search as learning: a bibliometric review",
-          note: "Available online",
+          note: "Published in International Journal on Digital Libraries.",
           href: "https://www.researchgate.net/publication/400834545_Search_as_learning_a_bibliometric_review"
         },
         {
