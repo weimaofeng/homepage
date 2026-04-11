@@ -44,7 +44,7 @@ const siteData = {
     },
     {
       id: "yue-zheng",
-      name: "Yue Zheng",
+      name: "Dr Yue Zheng",
       role: "PhD Researcher",
       affiliation: "EIRA Lab",
       bio: "Research focuses on multimodal information retrieval and inclusive information access, combining text, image, and sensor data to build retrieval systems that adapt to the needs of neurodivergent users.",
@@ -118,7 +118,7 @@ const siteData = {
     {
       id: "pub-yue-zheng",
       memberId: "yue-zheng",
-      name: "Yue Zheng",
+      name: "Dr Yue Zheng",
       overline: "PhD Researcher",
       description: "Research centered on multimodal information retrieval and inclusive information access, with a focus on adaptive retrieval for neurodivergent users.",
       entries: [
