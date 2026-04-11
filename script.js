@@ -3,7 +3,7 @@ const siteData = {
     {
       id: "haiming-liu",
       name: "Dr Haiming Liu",
-      role: "Principal Investigator / Associate Professor",
+      role: "Associate Professor",
       affiliation: "University of Southampton",
       bio: "Research in user-centered interactive multimedia and multimodal information access, spanning information retrieval, user behaviour, interaction design, and inclusive search experiences.",
       initials: "HL",
@@ -11,7 +11,7 @@ const siteData = {
       photo: "assets/haiming-liu.jpg",
       photoAlt: "Portrait of Dr Haiming Liu",
       photoPosition: "28% 14%",
-      badges: ["Supervisor"],
+      badges: ["Lab Head"],
       tags: ["Information Retrieval", "User Information Need", "Multimodal Access", "HCI"],
       links: [
         {
@@ -33,7 +33,7 @@ const siteData = {
       initials: "MW",
       photo: "assets/maofeng-wei.jpg",
       photoAlt: "Portrait of Dr Maofeng Wei",
-      badges: ["PhD"],
+      badges: ["Lab Member"],
       tags: ["User Information Need", "AI", "Search as Learning"],
       links: [
         {
@@ -51,7 +51,7 @@ const siteData = {
       initials: "YZ",
       photo: "assets/yue-zheng.jpg",
       photoAlt: "Portrait of Yue Zheng",
-      badges: ["PhD"],
+      badges: ["Lab Member"],
       tags: ["Multimodal Information Retrieval", "Inclusive Information Access", "Neurodivergent Users"],
       links: [
         {
@@ -86,7 +86,7 @@ const siteData = {
       id: "pub-haiming-liu",
       memberId: "haiming-liu",
       name: "Dr Haiming Liu",
-      overline: "Supervisor",
+      overline: "Lab Head",
       description: "There are many publications by Haiming Liu, so please refer directly to the full publications link below.",
       links: [
         {
@@ -100,7 +100,7 @@ const siteData = {
       id: "pub-maofeng-wei",
       memberId: "maofeng-wei",
       name: "Dr Maofeng Wei",
-      overline: "PhD Researcher",
+      overline: "Lab Member",
       description: "Research centered on user information need and AI, especially how search process data can inform learning support and intelligent assistance.",
       entries: [
         {
@@ -119,7 +119,7 @@ const siteData = {
       id: "pub-yue-zheng",
       memberId: "yue-zheng",
       name: "Dr Yue Zheng",
-      overline: "PhD Researcher",
+      overline: "Lab Member",
       description: "Research centered on multimodal information retrieval and inclusive information access, with a focus on adaptive retrieval for neurodivergent users.",
       entries: [
         {
