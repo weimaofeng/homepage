@@ -83,6 +83,31 @@ const siteData = {
       ]
     },
     {
+      id: "jamilah-alamri",
+      name: "Dr Jamilah Alamri",
+      role: "PhD Researcher",
+      affiliation: "EIRA Lab",
+      bio: "Research in information retrieval in mixed reality, with a focus on user information needs, interaction design, and how contextual factors shape search and learning experiences, adopting a participatory, human-centred design approach to support the development of effective interactive systems.",
+      initials: "JA",
+      photo: "assets/jamilah-alamri.jpg",
+      photoAlt: "Portrait of Dr Jamilah Alamri",
+      badges: ["Lab Member"],
+      tags: [
+        "Mixed Reality",
+        "Information Retrieval",
+        "User Information Needs",
+        "Human-Centred Design",
+        "Participatory Design",
+        "Human-Computer Interaction"
+      ],
+      links: [
+        {
+          label: "Publications",
+          href: "#pub-jamilah-alamri"
+        }
+      ]
+    },
+    {
       id: "upcoming-members",
       name: "Group Members",
       role: "PhD Students, Researchers, Visitors",
@@ -165,6 +190,15 @@ const siteData = {
       name: "Dr Wenxiang Cai",
       overline: "Lab Member",
       description: "Research centered on interactive information retrieval and access in mixed reality, especially how user information needs emerge, evolve, and can be supported through context-aware and AR interaction. No publications are listed yet.",
+      entries: [],
+      links: []
+    },
+    {
+      id: "pub-jamilah-alamri",
+      memberId: "jamilah-alamri",
+      name: "Dr Jamilah Alamri",
+      overline: "Lab Member",
+      description: "Research in information retrieval in mixed reality, with a focus on user information needs, interaction design, and how contextual factors shape search and learning experiences, adopting a participatory, human-centred design approach to support the development of effective interactive systems. No publications are listed yet.",
       entries: [],
       links: []
     },
