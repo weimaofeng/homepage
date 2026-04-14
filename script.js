@@ -65,18 +65,20 @@ const siteData = {
       ]
     },
     {
-      id: "wenxaing-cai",
-      name: "Dr Wenxaing Cai",
+      id: "wenxiang-cai",
+      name: "Dr Wenxiang Cai",
       role: "PhD Researcher",
       affiliation: "EIRA Lab",
       bio: "Research centered on interactive information retrieval and access in mixed reality, especially how user information needs emerge, evolve, and can be supported through context-aware and AR interaction.",
       initials: "WC",
+      photo: "assets/wenxiang-cai.jpg",
+      photoAlt: "Portrait of Dr Wenxiang Cai",
       badges: ["Lab Member"],
       tags: ["AR", "Information Needs"],
       links: [
         {
           label: "Publications",
-          href: "#pub-wenxaing-cai"
+          href: "#pub-wenxiang-cai"
         }
       ]
     },
@@ -158,9 +160,9 @@ const siteData = {
       ]
     },
     {
-      id: "pub-wenxaing-cai",
-      memberId: "wenxaing-cai",
-      name: "Dr Wenxaing Cai",
+      id: "pub-wenxiang-cai",
+      memberId: "wenxiang-cai",
+      name: "Dr Wenxiang Cai",
       overline: "Lab Member",
       description: "Research centered on interactive information retrieval and access in mixed reality, especially how user information needs emerge, evolve, and can be supported through context-aware and AR interaction. No publications are listed yet.",
       entries: [],
