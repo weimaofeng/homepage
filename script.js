@@ -108,6 +108,50 @@ const siteData = {
       ]
     },
     {
+      id: "an-ning-shen",
+      name: "Dr An Ning Shen",
+      role: "PhD Researcher",
+      affiliation: "EIRA Lab",
+      bio: "Research focuses on Data Trusts and data governance as a mechanism for responsible health data sharing, with a technical emphasis on federated learning across distributed institutions. There is particular interest in leveraging multi-agent systems to operationalise Data Trust governance at scale.",
+      initials: "AS",
+      photo: "assets/an-ning-shen.jpg",
+      photoAlt: "Portrait of Dr An Ning Shen",
+      badges: ["Lab Member"],
+      tags: ["Data Governance", "Distributed Learning", "Multi-Agent Systems"],
+      links: [
+        {
+          label: "Home Page",
+          href: "https://www.linkedin.com/in/an-ning-shen/"
+        },
+        {
+          label: "Publications",
+          href: "#pub-an-ning-shen"
+        }
+      ]
+    },
+    {
+      id: "ruishi-wang",
+      name: "Dr Ruishi Wang",
+      role: "PhD Researcher",
+      affiliation: "EIRA Lab",
+      bio: "Research focuses on large language model based multi-agent systems, with a particular emphasis on safety challenges during real-world deployment. There is special interest in how system-level coordination and interaction introduce new risks beyond individual model behaviour, and how these risks can be identified and mitigated.",
+      initials: "RW",
+      photo: "assets/ruishi-wang.png",
+      photoAlt: "Portrait of Dr Ruishi Wang",
+      badges: ["Lab Member"],
+      tags: ["LLM-MAS", "AI Safety", "AI Agent"],
+      links: [
+        {
+          label: "Home Page",
+          href: "https://www.linkedin.com/in/ruishi-wang-zero/"
+        },
+        {
+          label: "Publications",
+          href: "#pub-ruishi-wang"
+        }
+      ]
+    },
+    {
       id: "upcoming-members",
       name: "Group Members",
       role: "PhD Students, Researchers, Visitors",
@@ -201,6 +245,36 @@ const siteData = {
       description: "Research in information retrieval in mixed reality, with a focus on user information needs, interaction design, and how contextual factors shape search and learning experiences, adopting a participatory, human-centred design approach to support the development of effective interactive systems. No publications are listed yet.",
       entries: [],
       links: []
+    },
+    {
+      id: "pub-an-ning-shen",
+      memberId: "an-ning-shen",
+      name: "Dr An Ning Shen",
+      overline: "Lab Member",
+      description: "Research focuses on Data Trusts and data governance as a mechanism for responsible health data sharing, with a technical emphasis on federated learning across distributed institutions and the use of multi-agent systems to operationalise governance at scale. No publications are listed yet.",
+      entries: [],
+      links: [
+        {
+          label: "View Home Page",
+          href: "https://www.linkedin.com/in/an-ning-shen/",
+          external: true
+        }
+      ]
+    },
+    {
+      id: "pub-ruishi-wang",
+      memberId: "ruishi-wang",
+      name: "Dr Ruishi Wang",
+      overline: "Lab Member",
+      description: "Research focuses on large language model based multi-agent systems, especially safety challenges during real-world deployment, including risks introduced by system-level coordination and interaction beyond individual model behaviour. No publications are listed yet.",
+      entries: [],
+      links: [
+        {
+          label: "View Home Page",
+          href: "https://www.linkedin.com/in/ruishi-wang-zero/",
+          external: true
+        }
+      ]
     },
     {
       id: "pub-upcoming-members",
