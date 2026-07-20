@@ -24,7 +24,13 @@
         <span class="brand-text">EIRA Lab</span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
         <span></span>
         <span></span>
       </button>
@@ -32,6 +38,8 @@
       <nav class="site-nav" id="site-nav" aria-label="Primary">
         <a class="nav-link" href="#about">About</a>
         <a class="nav-link" href="#members">Members</a>
+        <a class="nav-link" href="#visitors">Visitors</a>
+        <a class="nav-link" href="#collaborators">Collaborators</a>
         <a class="nav-link" href="#publications">Publications</a>
       </nav>
     </header>
@@ -156,6 +164,46 @@
         </div>
 
         <div class="card-grid card-grid--members" id="members-grid"></div>
+      </section>
+
+      <section class="section" id="visitors">
+        <div class="section-header reveal">
+          <div>
+            <p class="section-kicker">Visitors</p>
+            <h2 class="section-title">Researchers visiting the lab.</h2>
+          </div>
+          <p class="section-intro">
+            We welcome visiting researchers who bring new ideas, perspectives, and opportunities
+            for exchange to EIRA Lab.
+          </p>
+        </div>
+
+        <ol
+          class="people-list people-list--visitors"
+          id="visitors-list"
+          aria-label="Visiting researchers"
+          role="list"
+        ></ol>
+      </section>
+
+      <section class="section" id="collaborators">
+        <div class="section-header reveal">
+          <div>
+            <p class="section-kicker">Collaborators</p>
+            <h2 class="section-title">People we work with.</h2>
+          </div>
+          <p class="section-intro">
+            Our collaborators connect EIRA Lab with complementary expertise and shared research
+            interests.
+          </p>
+        </div>
+
+        <ol
+          class="people-list people-list--collaborators"
+          id="collaborators-list"
+          aria-label="Research collaborators"
+          role="list"
+        ></ol>
       </section>
 
       <section class="section" id="publications">

@@ -1,4 +1,21 @@
 const siteData = {
+  visitors: [
+    {
+      name: "Boxing Zhang",
+      role: "PhD",
+      affiliation: "Wuhan University of Technology",
+      email: "zhangboxing@whut.edu.cn"
+    }
+  ],
+  collaborators: [
+    {
+      name: "Leslie Carr",
+      role: "Professor of Web Science",
+      affiliation: "Electronics & Computer Science",
+      label: "Staff",
+      email: "lac@ecs.soton.ac.uk"
+    }
+  ],
   members: [
     {
       id: "haiming-liu",
@@ -154,7 +171,7 @@ const siteData = {
     {
       id: "upcoming-members",
       name: "Group Members",
-      role: "PhD Students, Researchers, Visitors",
+      role: "PhD Students and Researchers",
       affiliation: "Profiles coming next",
       bio: "This area is ready for the rest of the group. Once you send names, roles, bios, and links, each person can get a dedicated profile and a matching publications section below.",
       initials: "EIRA",
@@ -289,6 +306,8 @@ const siteData = {
 };
 
 const membersGrid = document.querySelector("#members-grid");
+const visitorsList = document.querySelector("#visitors-list");
+const collaboratorsList = document.querySelector("#collaborators-list");
 const publicationsGrid = document.querySelector("#publications-grid");
 
 function createChipRow(items = [], className = "chip-row") {
@@ -383,6 +402,60 @@ function renderMembers() {
     }
 
     membersGrid.appendChild(card);
+  });
+}
+
+function renderPeopleList(people, container) {
+  people.forEach((person, index) => {
+    const item = document.createElement("li");
+    item.className = "person-row reveal";
+    item.setAttribute("role", "listitem");
+
+    const number = document.createElement("span");
+    number.className = "person-index";
+    number.setAttribute("aria-hidden", "true");
+    number.textContent = String(index + 1).padStart(2, "0");
+
+    const details = document.createElement("div");
+    details.className = "person-details";
+
+    const heading = document.createElement("div");
+    heading.className = "person-heading";
+
+    const name = document.createElement("h3");
+    name.className = "person-name";
+    name.textContent = person.name;
+    heading.appendChild(name);
+
+    if (person.label) {
+      const label = document.createElement("span");
+      label.className = "person-label";
+      label.textContent = person.label;
+      heading.appendChild(label);
+    }
+
+    const role = document.createElement("p");
+    role.className = "person-role";
+    role.textContent = person.role;
+
+    const affiliation = document.createElement("p");
+    affiliation.className = "person-affiliation";
+    affiliation.textContent = person.affiliation;
+
+    details.append(heading, role, affiliation);
+
+    const contact = document.createElement("div");
+    contact.className = "person-contact";
+
+    const contactLabel = document.createElement("span");
+    contactLabel.className = "person-contact-label";
+    contactLabel.textContent = "Email";
+
+    const email = createLink(person.email, `mailto:${person.email}`, "person-email");
+    contact.append(contactLabel, email);
+
+    item.append(number, details, contact);
+    container.appendChild(item);
   });
 }
 
@@ -512,12 +585,34 @@ function setupActiveNav() {
   sections.forEach((section) => observer.observe(section));
 }
 
+function restoreInitialHashPosition() {
+  const targetId = window.location.hash.slice(1);
+  const target = targetId ? document.getElementById(targetId) : null;
+
+  if (!target) {
+    return;
+  }
+
+  const scrollToTarget = () => {
+    window.requestAnimationFrame(() => target.scrollIntoView());
+  };
+
+  if (document.readyState === "complete") {
+    scrollToTarget();
+  } else {
+    window.addEventListener("load", scrollToTarget, { once: true });
+  }
+}
+
 function init() {
   renderMembers();
+  renderPeopleList(siteData.visitors, visitorsList);
+  renderPeopleList(siteData.collaborators, collaboratorsList);
   renderPublicationSections();
   setupMobileNav();
   setupReveal();
   setupActiveNav();
+  restoreInitialHashPosition();
 
   document.querySelector("#year").textContent = new Date().getFullYear();
 }
